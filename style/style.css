@@ -13,8 +13,10 @@ body {
 	color:#ccc;
 	/*background: #303B41 url(../images/bg.jpg) repeat-x;*/
 	background-image: url("../images/25551.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 
-	line-height: 1.4em;
+	/*line-height: 1.4em;*/
 }
 
 
