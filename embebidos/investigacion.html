@@ -7,14 +7,46 @@
 	<tbody><tr><td> 	</td></tr>
 	<tr>
 		<td>
-In recent years , the automatic identification procedures (Auto-ID) have come to be very popular in our society. Particularly, Radio Frequency IDentification or RFID has become in one of the technologies more used in different sectors in the industry. The great attraction of RFID is its ability for identifying objects in a wireless fashion, without contact or line of sight between participant devices. Such features makes RFID very attractive for applications like: asset tracking, automated inventory managment, counting task, access control and production, public transportation, and nutrimental control.<br><br>
+			El streaming de vídeo es una de las tecnologías más populares hoy en día, debido a ello, los proveedores de servicios se esmeran por transmitir de forma continua
+			el contenido multimedia del servidor al cliente. Sin embargo, es necesario que constantemente las plataformas de streaming mejoren, debido a la capacidad de la red
+			 y a la heterogeneidad de los dispositivos de los usuarios. Las tecnologías para la distribución de vídeo para ofrecer una mejor calidad a los usuarios de forma
+			 automática se han convertido en un reto muy importante para la industria. Mediante el uso de HTTP, que es el protocolo de nivel de aplicación por defecto para el
+			  servicio de Internet, se ha llevado a cabo una nueva investigación y desarrollo del método de streaming.<br><br>
 
-In this way, RFID needs to have the mechanisms to improve and optimize its performance, since it face many problems, such as: collision resolution, save energy, security, fiability and read range.<br><br>
+      El Streaming Adaptativo sobre HTTP (HAS), a través de su estándar MPEG-DASH (Dynamic Adaptive Streaming Over HTTP) se ha vuelto muy popular para la distribución
+			de contenidos multimedia a través de Internet. Este modelo tiene varias ventajas, en primer lugar, la infraestructura de Internet ha evolucionado de tal manera
+			que puede soportar eficientemente a HTTP. Por ejemplo, las Redes de Distribución de Contenidos (CDN, Content Delivery Network) proporcionan copias locales
+			del contenido multimedia principalmente y que están almacenados en otros servidores alejados geográficamente. De esta forma, es posible acceder a dichos
+			contenidos de una manera mucho más eficiente, logrando un mejor balance de la carga a la que están sometidos los servidores que alojan el contenido	como los enlaces
+			 que interconectan las distintas secciones de la red, eliminando posibles cuellos de botella y sirviendo los datos en función de la cercanía
+			geográfica del usuario final, minimizando los retardos. Además, casi todos los firewalls pueden abrir puertos que soportan conexiones HTTP.
+			En segundo lugar, el cliente puede realizar la sesión de streaming sin tener que mantener una sesión en el servidor.<br><br>
 
-In order to improve the RFID technology performance in environments dense and with a large coverage area, we propose to use a distributed approach for the design of the RFID network architecture, and then perform the identification process in a distributed fashion. This approach will let us to get many advantages for applications of the real world with a low cost of implementation.<br><br>
+     El contenido se encuentra dividido en segmentos de entre 2 a 10 segundos de duración. Las propiedades de estos y su localización en el servidor se encuentran descritos
+		  en un archivo XML denominado Media Presentation Description (MPD). Los segmentos de corta duración pueden aprovechar las fluctuaciones en el ancho de banda, evitando
+			 la inanición en el buffer del reproductor a cambio de realizar un mayor número de peticiones GET y una posible sobrecarga en la codificación del material de vídeo.
+			 En cambio, los segmentos de mayor duración buscan tener una mayor eficiencia en la codificación al contar con un mayor número de Group of Pictures (GoP).<br><br>
+
+      Por otro lado, uno de los elementos clave en el \textit{streaming} de vídeo son los algoritmos de tasa adaptativa de bits (Adaptative Bitrate, ABR), los cuales se
+			ejecutan principalmente en cada cliente. Su objetivo, es garantizar la calidad de la experiencia (QoE, Quality of Experience) de los usuarios bajo la presencia de
+			fluctuaciones del ancho de banda. Dichas fluctuaciones se deben a factores como la intensidad de la señal en conexiones inalámbricas, congestión de la red, eventos
+			de convergencia en la red o de servicios digitales, entre otros. Los algoritmos ABR pueden tener en cuenta factores como las estimaciones del ancho de banda, la
+			ocupación del buffer de reproducción, características del dispositivo, preferencias del espectador o características del contenido, aunque con diferentes
+			pesos o calificaciones de calidad.  La Figura~\ref{fig:DASHBeha},  muestra el proceso realizado en DASH para reproducir el contenido según van cambiando las
+			condiciones en la red.<br><br>
+
+      Además de los métodos de streaming de vídeo y sus algoritmos ABR, se encuentran también las técnicas de compresión de vídeo, que de igual forma, están experimentando
+			cierto crecimiento. Esto se debe a una estandarización de la compresión, la cual es necesaria para facilitar el intercambio de datos a nivel mundial a través de
+			aplicaciones de \textit{streaming} de vídeo. Una codificación estándar es eficiente si en el diseño de los algoritmos de compresión se implementan un
+			codificador y decodificador eficaces. Actualmente, la mayoría del contenido de vídeo está codificado mediante el estándar H.264/AVC (Advanced Video Coding)~\cite{h264}.
+			H.264 se desempeña muy bien en HD (720p) y Full HD (1080p). Sin embargo, en escenarios utilizando UHD (Ultra High Definition) se requiere una mayor eficiencia.<br><br>
+
+      Dado que la QoE del espectador debe determinarse en tiempo real durante la reproducción, ge\-ne\-ral\-men\-te se utilizan métricas objetivas que incluyen el número de
+      paradas de buffer, la duración del retardo de inicio, la frecuencia y la cantidad de oscilaciones, y la inestabilidad del contenido multimedia. Debido a su diseño,
+      los estándares como DASH no exigen ningún algoritmo ABR en particular, dejando a los desarrolladores la tarea de innovar e implementar su propio método.<br><br>
 		</td>
 	</tr>
-	<tr><td align="right"> <a href="../Documents/PropuestaPredoctoralErikDiaz.pdf" target="_blank">PDF Version.</a> </td></tr>
+	<tr><td align="right"> <a href="../Documents/PropuestaPredoctoralErikDiaz.pdf" target="_blank">Versión PDF.</a> </td></tr>
  </tbody></table>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
