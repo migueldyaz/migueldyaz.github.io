@@ -12,7 +12,7 @@ body {
 	font: 74% Arial, Sans-Serif;
 	color:#ccc;
 	/*background: #303B41 url(../images/bg.jpg) repeat-x;*/
-	background: #303B41 url(../images/25550.jpg) repeat-x;
+	background: url(../images/25550.jpg);
 
 	line-height: 1.4em;
 }
