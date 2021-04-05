@@ -1,4 +1,4 @@
-$(document).ready(function(){
+(document).ready(function(){
   $("#myBOTTON1").click(function(){
     $("#myDIV1").fadeToggle("slow");
   });
